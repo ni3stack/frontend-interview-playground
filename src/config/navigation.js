@@ -5,12 +5,12 @@ export const navigation = [
         group: "Basics",
         items: [
             {  
-                title: "Todo",
+                title: "TODO",
                 path: "/todo",
                 component: lazy(() => import("../features/todo/Todo"))
             },
             {  
-                title: "Otp",
+                title: "OTP",
                 path: "/otp",
                 component: lazy(() => import("../features/otp/Otp"))
             }

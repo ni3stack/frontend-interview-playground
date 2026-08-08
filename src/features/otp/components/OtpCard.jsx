@@ -1,4 +1,4 @@
-import { OtpVerifier } from "./OtpVerifier";
+import OtpVerifier from "./OtpVerifier";
 
 function OtpCard({ emailId = "-" }) {
   return (
