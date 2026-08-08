@@ -1,0 +1,7 @@
+.todo-row {
+    list-style-type: number;
+}
+
+.completed {
+    text-decoration: line-through;
+}

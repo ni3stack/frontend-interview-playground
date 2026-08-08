@@ -1,0 +1,10 @@
+.header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
+    border-bottom: 1px solid var(--border);
+    background-color: #fff;
+}

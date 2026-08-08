@@ -1,0 +1,11 @@
+:root {
+    --header-height: 64px;
+    --sidebar-width: 260px;
+
+    --background-color: #f5f6f8;
+    --sidebar-bg-color: #1f2937;
+    --content-bg-color: #fff;
+
+    --text: #222;
+    --border: #ddd
+}
