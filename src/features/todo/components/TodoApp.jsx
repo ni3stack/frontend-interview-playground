@@ -2,8 +2,8 @@ import React from 'react';
 import TodoList from './TodoList';
 import TodoInput from './TodoInput';
 import TodoFilter from './TodoFilter';
-import useFetchTodo from "./useFetchTodo"
-import './Todo.css';
+import useFetchTodo from "../hooks/useFetchTodo"
+import './TodoApp.css';
 
 function TodoApp() {
     const { data, error, loading } = useFetchTodo('https://jsonplaceholder.typicode.com/todos')

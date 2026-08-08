@@ -1,9 +1,9 @@
+import TodoApp from "./components/TodoApp";
+
 function Todo()  {
     return (
-        <div>
-            <h1>Todo Page</h1>
-        </div>
-    )
+        <TodoApp />
+    )       
 }
 
 export default Todo;
