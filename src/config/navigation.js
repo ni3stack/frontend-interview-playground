@@ -7,12 +7,12 @@ export const navigation = [
             {  
                 title: "Todo",
                 path: "/todo",
-                component: lazy(() => import("../pages/Todo/Todo"))
+                component: lazy(() => import("../features/todo/Todo"))
             },
             {  
                 title: "Otp",
                 path: "/otp",
-                component: lazy(() => import("../pages/Otp/Otp"))
+                component: lazy(() => import("../features/otp/Otp"))
             }
         ]
     },
@@ -22,12 +22,12 @@ export const navigation = [
             {
                 title: "Debounced Search",
                 path: "/debounced-search",
-                component: lazy(() => import("../pages/DebouncedSearch/DebouncedSearch"))
+                component: lazy(() => import("../features/debounced-search/DebouncedSearch"))
             },
             {
                 title: "Infinite Scroll",
                 path: "/infinite-scroll",
-                component: lazy(() => import("../pages/InfiniteScroll/InfiniteScroll"))
+                component: lazy(() => import("../features/infinite-scroll/InfiniteScroll"))
             }
         ]
     },
@@ -37,12 +37,12 @@ export const navigation = [
             {
                 title: "Product Listing",
                 path: "/product-listing",
-                component: lazy(() => import("../pages/ProductListing/ProductListing"))
+                component: lazy(() => import("../features/product-listing/ProductListing"))
             },
             {
                 title: "Data Table",
                 path: "/data-table",
-                component: lazy(() => import("../pages/DataTable/DataTable"))
+                component: lazy(() => import("../features/data-table/DataTable"))
             }
         ]
     }
