@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import type { Todo } from "../components/types";
 
-function useFetchTodos(url) {
-    const [data, setData] = useState([]);
+function useFetchTodos(url: string) {
+    const [data, setData] = useState<Todo[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<Error | null>(null);
 
     useEffect(() => {
         async function fetchTodoData() {
@@ -14,9 +15,11 @@ function useFetchTodos(url) {
                 }
                 const results = await response.json();
                 setData(results);
-            }catch(err) {
-                setError(err);
-            }finally {
+            } catch(err) {
+                setError(
+                    err instanceof Error ? err : new Error("Something went wrong")
+                );
+            } finally {
                 setLoading(false);
             }
         }
