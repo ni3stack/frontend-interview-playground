@@ -1,0 +1,57 @@
+.debounce-page {
+    width: auto;
+}
+
+.debounce-search-conatiner {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.search-input {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    gap: 4px;
+}
+
+.search-input label {
+    color: #64748b;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search-input input {
+    min-height: 32px;
+    border-radius: 6px;
+    min-width: 260px;
+    border: 1px solid;
+    box-sizing: border-box;
+    background: #fff;
+    color: #0f172a;
+    font-family: inherit;
+    outline: none;
+}
+
+.search-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.repo-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+}
+
+.repo-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid;
+    width: 360px;
+    padding: 12px;
+}
