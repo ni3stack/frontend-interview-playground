@@ -5,12 +5,12 @@ export const navigation = [
         group: "Basics",
         items: [
             {  
-                title: "TODO",
+                title: "Todo",
                 path: "/todo",
                 component: lazy(() => import("../features/todo/Todo"))
             },
             {  
-                title: "OTP",
+                title: "OtpVerification",
                 path: "/otp",
                 component: lazy(() => import("../features/otp/Otp"))
             }
@@ -28,7 +28,7 @@ export const navigation = [
                 title: "Infinite Scroll",
                 path: "/infinite-scroll",
                 component: lazy(() => import("../features/infinite-scroll/InfiniteScroll"))
-            }
+            },
         ]
     },
     {
@@ -43,6 +43,12 @@ export const navigation = [
                 title: "Data Table",
                 path: "/data-table",
                 component: lazy(() => import("../features/data-table/DataTable"))
+            },
+            
+            {
+                title: "Security",
+                path: "/security-test",
+                component: lazy(() => import("../features/security-test/SecurityTest"))
             }
         ]
     }
